@@ -4,68 +4,163 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Emmanuel Alokolodo | Technical Trainer</title>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<!-- Custom CSS -->
 <link rel="stylesheet" href="style.css">
+<style>
+body { font-family: 'Roboto', sans-serif; }
+.hero {
+    background: linear-gradient(to right, #2563eb, #1d4ed8);
+    color:white; padding:100px 20px; text-align:center;
+}
+.hero h1 { font-size:3rem; font-weight:700; }
+.hero p { font-size:1.3rem; margin-bottom:20px; }
+.btn-custom {
+    background: linear-gradient(to right, #f97316, #f43f5e);
+    color:white; font-weight:bold; border-radius:50px;
+    padding:12px 30px; transition:0.3s;
+}
+.btn-custom:hover { opacity:0.85; }
+.profile-img { width:180px; border-radius:50%; border:5px solid white; margin-bottom:20px; }
+.section-title { font-weight:700; margin-bottom:30px; color:#1f2937; }
+.card:hover { transform: translateY(-5px); box-shadow:0 8px 20px rgba(0,0,0,0.2); transition:0.3s; }
+</style>
 </head>
 <body>
 
-<!-- Navigation -->
-<nav>
-  <div class="logo">Emmanuel Alokolodo</div>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="experience.html">Experience</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="certifications.html">Certifications</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Emmanuel Alokolodo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
 
 <!-- Hero Section -->
 <section class="hero">
-  <img src="images/profile.jpg" alt="Emmanuel Alokolodo" class="profile-img">
-  <h1>Emmanuel Alokolodo</h1>
-  <p>Technical Trainer | AI, Data & Programming | Robotics Simulation</p>
-  <a href="#contact" class="btn">Contact Me</a>
+    <img src="images/profile.jpg" alt="Emmanuel Alokolodo" class="profile-img">
+    <h1>Emmanuel Alokolodo</h1>
+    <p>Technical Trainer | AI, Data & Programming | Robotics Simulation</p>
+    <a href="#contact" class="btn btn-custom">Contact Me</a>
 </section>
 
 <!-- About Me -->
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    I am a Technical Trainer with experience delivering practical training in 
-    programming, AI, data analysis, robotics simulation, and game development. 
-    I teach both beginners and advanced learners, focusing on hands-on learning 
-    and real-world applications.
-  </p>
+<section id="about" class="container py-5">
+    <h2 class="section-title">About Me</h2>
+    <p>I am a Technical Trainer experienced in AI, data analysis, programming, robotics simulation, and game development. I focus on practical, hands-on learning for students and professionals alike.</p>
 </section>
 
-<!-- Skills -->
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="skill-grid">
-    <div class="skill-card">Python Programming</div>
-    <div class="skill-card">Data Science Fundamentals</div>
-    <div class="skill-card">AI & Machine Learning Basics</div>
-    <div class="skill-card">Web Development (HTML, CSS, JS)</div>
-    <div class="skill-card">Arduino Robotics Simulation</div>
-    <div class="skill-card">Game Development (Scratch, Unity)</div>
-    <div class="skill-card">Marketing & Social Media Management</div>
-    <div class="skill-card">WordPress & CMS</div>
+<!-- Skills Tabs -->
+<section id="skills" class="container py-5">
+    <h2 class="section-title">Skills</h2>
+    <ul class="nav nav-tabs" id="skillsTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="programming-tab" data-bs-toggle="tab" data-bs-target="#programming" type="button" role="tab">Programming</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="ai-tab" data-bs-toggle="tab" data-bs-target="#ai" type="button" role="tab">AI & Data</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="robotics-tab" data-bs-toggle="tab" data-bs-target="#robotics" type="button" role="tab">Robotics</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="web-tab" data-bs-toggle="tab" data-bs-target="#web" type="button" role="tab">Web & Design</button>
+      </li>
+    </ul>
+    <div class="tab-content mt-3" id="skillsTabContent">
+      <div class="tab-pane fade show active" id="programming" role="tabpanel">
+        <div class="row">
+          <div class="col-md-3 mb-3"><div class="card p-3 text-center">Python</div></div>
+          <div class="col-md-3 mb-3"><div class="card p-3 text-center">JavaScript</div></div>
+          <div class="col-md-3 mb-3"><div class="card p-3 text-center">C++ / C</div></div>
+          <div class="col-md-3 mb-3"><div class="card p-3 text-center">SQL</div></div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="ai" role="tabpanel">
+        <div class="row">
+          <div class="col-md-3 mb-3"><div class="card p-3 text-center">AI & ML Basics</div></div>
+          <div class="col-md-3 mb-3"><div class="card p-3 text-center">Data Analysis</div></div>
+          <div class="col-md-3 mb-3"><div class="card p-3 text-center">Computer Vision</div></div>
+          <div class="col-md-3 mb-3"><div class="card p-3 text-center">Statistics</div></div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="robotics" role="tabpanel">
+        <div class="row">
+          <div class="col-md-3 mb-3"><div class="card p-3 text-center">Arduino Programming</div></div>
+          <div class="col-md-3 mb-3"><div class="card p-3 text-center">Lego Mindstorms</div></div>
+          <div class="col-md-3 mb-3"><div class="card p-3 text-center">Tinkercad Simulations</div></div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="web" role="tabpanel">
+        <div class="row">
+          <div class="col-md-3 mb-3"><div class="card p-3 text-center">HTML5 / CSS3</div></div>
+          <div class="col-md-3 mb-3"><div class="card p-3 text-center">WordPress</div></div>
+          <div class="col-md-3 mb-3"><div class="card p-3 text-center">Adobe Photoshop</div></div>
+          <div class="col-md-3 mb-3"><div class="card p-3 text-center">App & Game Dev</div></div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- Projects Carousel -->
+<section id="projects" class="container py-5">
+  <h2 class="section-title">Projects & Websites</h2>
+  <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/project1.jpg" class="d-block w-100" alt="timipython.com.ng">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>timipython.com.ng</h5>
+          <p>Company website development and management</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/project2.jpg" class="d-block w-100" alt="tugcart.ng">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>tugcart.ng</h5>
+          <p>E-commerce platform development</p>
+        </div>
+      </div>
+      <!-- Add more carousel items for other websites -->
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
   </div>
 </section>
 
 <!-- Contact -->
-<section id="contact">
-  <h2>Contact</h2>
+<section id="contact" class="container py-5">
+  <h2 class="section-title">Contact</h2>
   <p>Email: <a href="mailto:timialokolodo@gmail.com">timialokolodo@gmail.com</a></p>
   <p>Phone: +234 812 419 4634</p>
   <p>LinkedIn: <a href="https://www.linkedin.com/in/emmanuel-alokolodo-7773521a7/">Profile</a></p>
   <p>GitHub: <a href="https://github.com/alokolodo">Profile</a></p>
 </section>
 
-<footer>
+<footer class="text-center py-4 bg-dark text-white">
   <p>© 2026 Emmanuel Alokolodo</p>
 </footer>
 
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
