@@ -4,38 +4,122 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Certifications | Emmanuel Alokolodo</title>
-<link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Roboto', sans-serif; }
+.navbar { background: linear-gradient(to right, #f59e0b, #ec4899); }
+.navbar .nav-link { font-weight:600; color:white !important; }
+.navbar .nav-link:hover { color:#fffacd !important; text-shadow: 1px 1px 2px rgba(0,0,0,0.3); }
+.section-title { font-weight:700; margin-bottom:30px; color:#1f2937; text-align:center; }
+.card { transition:0.3s; border-radius:15px; }
+.card:hover { transform: translateY(-5px); box-shadow:0 10px 25px rgba(0,0,0,0.2); }
+.card-header { background: linear-gradient(to right, #0ea5e9, #22c55e); color:white; font-weight:700; text-align:center; border-radius:15px 15px 0 0; }
+.card-body { background: #f9fafb; border-radius:0 0 15px 15px; }
+.certificate-img { width:100%; height:200px; object-fit:cover; border-radius:8px; margin-bottom:10px; }
+</style>
 </head>
 <body>
 
-<nav>
-  <div class="logo">Emmanuel Alokolodo</div>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="experience.html">Experience</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="certifications.html">Certifications</a></li>
-    <li><a href="index.html#contact">Contact</a></li>
-  </ul>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand text-white fw-bold" href="index.html">Emmanuel Alokolodo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Projects/Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="certifications.html">Certifications</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
 
-<section>
-  <h2>Certifications & Courses</h2>
-  <ul>
-    <li>Complete WordPress Automation Course for Beginners – Udemy (Oct 2021 – Present)</li>
-    <li>Introduction to Domain Name and Hosting – Udemy (Sep 2021 – Present)</li>
-    <li>Statistics for Data Science using Python – Udemy (May 2021 – Present)</li>
-    <li>Computer Vision with Python – Udemy (Mar 2021 – Present)</li>
-    <li>Python Basic to Advanced – Udemy (Jul 2020 – Present)</li>
-    <li>App Development – SUA CODE (Jul 2019 – Present)</li>
-    <li>Web Design & Digital Marketing – Lagos State Government (Apr 2018 – Present)</li>
-    <li>Leadership Training – RCCG (Jan 2015 – Present)</li>
-  </ul>
+<!-- Certifications Section -->
+<section class="container py-5">
+  <h2 class="section-title">Certifications</h2>
+  
+  <div class="row g-4">
+    <!-- Certification 1 -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card">
+        <div class="card-header">Complete WordPress Automation Course</div>
+        <div class="card-body">
+          <img src="images/cert1.jpg" alt="WordPress Cert" class="certificate-img">
+          <p>Completed Udemy course on WordPress automation for beginners. Gained skills in building automated websites and managing hosting environments.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certification 2 -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card">
+        <div class="card-header">Introduction to Domain Name & Hosting</div>
+        <div class="card-body">
+          <img src="images/cert2.jpg" alt="Domain Hosting Cert" class="certificate-img">
+          <p>Udemy certificate on domain registration, hosting, and basic web infrastructure management.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certification 3 -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card">
+        <div class="card-header">Statistics for Data Science using Python</div>
+        <div class="card-body">
+          <img src="images/cert3.jpg" alt="Statistics Cert" class="certificate-img">
+          <p>Udemy certificate covering statistics and data science concepts with Python for analytics and AI applications.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certification 4 -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card">
+        <div class="card-header">Computer Vision with Python</div>
+        <div class="card-body">
+          <img src="images/cert4.jpg" alt="Computer Vision Cert" class="certificate-img">
+          <p>Learned OpenCV and image processing with Python to develop computer vision projects and AI models.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certification 5 -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card">
+        <div class="card-header">Python Basic to Advanced</div>
+        <div class="card-body">
+          <img src="images/cert5.jpg" alt="Python Cert" class="certificate-img">
+          <p>Udemy certification for comprehensive Python programming skills from beginner to advanced.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certification 6 -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card">
+        <div class="card-header">Web Design & Digital Marketing</div>
+        <div class="card-body">
+          <img src="images/cert6.jpg" alt="Web Design Cert" class="certificate-img">
+          <p>Lagos State Government certification on professional web design and digital marketing strategies.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Add more certifications similarly -->
+  </div>
 </section>
 
-<footer>
+<footer class="text-center py-4" style="background:linear-gradient(to right,#f43f5e,#f59e0b); color:white;">
   <p>© 2026 Emmanuel Alokolodo</p>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
