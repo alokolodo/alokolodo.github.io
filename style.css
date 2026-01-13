@@ -1,0 +1,31 @@
+/* Reset */
+* { margin:0; padding:0; box-sizing:border-box; }
+
+/* Body */
+body { font-family: Arial, Helvetica, sans-serif; background:#f4f6f8; color:#333; }
+
+/* Navigation */
+nav { display:flex; justify-content:space-between; align-items:center; padding:20px 40px; background:#1f2937; }
+nav .logo { color:white; font-weight:bold; font-size:20px; }
+nav ul { list-style:none; display:flex; gap:20px; }
+nav ul li a { color:white; text-decoration:none; font-weight:500; transition:0.3s; }
+nav ul li a:hover { color:#2563eb; }
+
+/* Hero Section */
+.hero { text-align:center; padding:80px 20px; background:#2563eb; color:white; }
+.hero .profile-img { width:150px; border-radius:50%; margin-bottom:20px; }
+.hero h1 { font-size:40px; margin-bottom:10px; }
+.hero p { font-size:18px; margin-bottom:20px; }
+.hero .btn { display:inline-block; padding:12px 25px; background:white; color:#2563eb; border-radius:6px; font-weight:bold; text-decoration:none; transition:0.3s; }
+.hero .btn:hover { background:#1f2937; color:white; }
+
+/* Sections */
+section { padding:60px 20px; max-width:1000px; margin:auto; }
+section h2 { color:#1f2937; margin-bottom:20px; font-size:28px; }
+
+/* Skills Grid */
+.skill-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:15px; }
+.skill-card { background:white; padding:20px; border-radius:8px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.05); font-weight:bold; }
+
+/* Footer */
+footer { background:#1f2937; color:white; text-align:center; padding:20px; margin-top:40px; }
